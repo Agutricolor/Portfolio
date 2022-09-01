@@ -1,13 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import React from 'react'
 import './App.css'
+import { Footer } from './components/Footer/Footer'
 import { Navbar } from './components/Navbar/Navbar'
 
 function App() {
 
   return (
-    <div className="App">
+    <div className="App h-screen bg-slate-900">
       <Navbar />
+      <Footer />
     </div>
   )
 }

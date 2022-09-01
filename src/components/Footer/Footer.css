@@ -1,0 +1,11 @@
+.footer:hover {
+  box-shadow: -1px 0px 18px 8px rgba(29, 78, 216, 0.75);
+  -webkit-box-shadow: -1px 0px 18px 8px rgba(29, 78, 216, 0.75);
+  -moz-box-shadow: -1px 0px 18px 8px rgba(29, 78, 216, 0.75);
+}
+
+path {
+  box-shadow: 1px 3px 66px 19px rgba(222, 26, 26, 1);
+  -webkit-box-shadow: 1px 3px 66px 19px rgba(222, 26, 26, 1);
+  -moz-box-shadow: 1px 3px 66px 19px rgba(222, 26, 26, 1);
+}
