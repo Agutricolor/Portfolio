@@ -46,30 +46,32 @@ export const Navbar = () => {
 
   return (
     <nav className="bg-sky-700 w-full h-24 flex items-center justify-around fixed top-0 font-mono text-xl font-semibold text-gray-200 shadow-lg shadow-blue-700/50">
-      <a href="#Home"><Link to="Home">Agustin Vazquez</Link></a>
+      <a href="#Home"><Link duration={1000} to="Home">Agustin Vazquez</Link></a>
       <div>
         <div id="NavLinks" className="duration-700">
-          <a href="#About" className="px-8 hover:underline underline-offset-8">
-            <Link activeClass="active" to="About">
+          
+            <Link activeClass="active" to="About" className="px-8 hover:underline underline-offset-8" duration={1000}>
               Sobre mí
             </Link>
-          </a>
-          <a href="#" className="px-8 hover:underline underline-offset-8">
+          
+          
             <Link
               activeClass="px-8 underline underline-offset-8"
               to="Habilidades"
+              className="px-8 hover:underline underline-offset-8"
             >
               Habilidades
             </Link>
-          </a>
-          <a href="#" className="px-8 hover:underline underline-offset-8">
+          
+          
             <Link
               activeClass="px-8 underline underline-offset-8"
               to="Proyectos"
+              className="px-8 hover:underline underline-offset-8"
             >
               Proyectos
             </Link>
-          </a>
+          
           <a
             href="#"
             className="px-8 border-solid border-2 rounded-md p-2 mx-2 hover:bg-slate-200 hover:text-sky-700 duration-500"
