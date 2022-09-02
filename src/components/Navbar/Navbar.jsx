@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
+import "./Navbar.css"
 
 const style = {
   position: "absolute",
@@ -45,11 +46,11 @@ export const Navbar = () => {
 
   return (
     <nav className="bg-sky-700 w-full h-24 flex items-center justify-around fixed top-0 font-mono text-xl font-semibold text-gray-200 shadow-lg shadow-blue-700/50">
-      <a href="#">Agustin Vazquez</a>
+      <a href="#Home"><Link to="Home">Agustin Vazquez</Link></a>
       <div>
         <div id="NavLinks" className="duration-700">
-          <a href="#" className="px-8 hover:underline underline-offset-8">
-            <Link activeClass="px-8 underline underline-offset-8" to="Sobre mí">
+          <a href="#About" className="px-8 hover:underline underline-offset-8">
+            <Link activeClass="active" to="About">
               Sobre mí
             </Link>
           </a>

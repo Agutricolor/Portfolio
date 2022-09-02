@@ -6,7 +6,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 export const Footer = () => {
   return (
     <footer className="">
-      <div className="footer bg-sky-700 absolute w-14 h-40 top-1/3 left-0 rounded-r-md cursor-pointer duration-500 hover:w-16">
+      <div className="footer bg-sky-700 fixed w-14 h-40 top-1/2 left-0 rounded-r-md cursor-pointer duration-500 hover:w-16">
         <div className="flex flex-col justify-evenly items-center h-full w-full duration-500">
           <a
             href="https://www.linkedin.com/in/agustin-v%C3%A1zquez-fullstack-backendoriented/"
