@@ -6,6 +6,7 @@ import { Home } from "./components/Home/Home";
 import { Navbar } from "./components/Navbar/Navbar";
 
 function App() {
+  const assdf = () => {};
   return (
     <div className="App bg-slate-900">
       <Navbar />
