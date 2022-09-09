@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
-import "./Navbar.css"
+import "./Navbar.css";
 
 const style = {
   position: "absolute",
@@ -44,13 +44,30 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <nav className="bg-sky-700 w-full h-24 flex items-center justify-around fixed top-0 font-mono text-xl font-semibold text-gray-200 shadow-lg shadow-blue-700/50">
-      <a href="#Home" className="text-3xl p-10">Agustin Vazquez</a>
+    <nav className="bg-sky-700 w-full h-24 z-50 flex items-center justify-around fixed top-0 font-mono text-xl font-semibold text-gray-200 shadow-lg shadow-blue-700/50">
+      <a href="#Home" className="text-3xl p-10">
+        Agustin Vazquez
+      </a>
       <div>
         <div id="NavLinks" className="duration-700">
-          <a href="#About" className="px-8 cursor-pointer hover:underline underline-offset-8">Sobre mí</a>
-          <a href="#Skills" className="px-8 cursor-pointer hover:underline underline-offset-8">Habilidades</a>
-          <a href="#Projects" className="px-8 cursor-pointer hover:underline underline-offset-8">Proyectos</a>
+          <a
+            href="#About"
+            className="px-8 cursor-pointer hover:underline underline-offset-8"
+          >
+            Sobre mí
+          </a>
+          <a
+            href="#Skills"
+            className="px-8 cursor-pointer hover:underline underline-offset-8"
+          >
+            Habilidades
+          </a>
+          <a
+            href="#Projects"
+            className="px-8 cursor-pointer hover:underline underline-offset-8"
+          >
+            Proyectos
+          </a>
           <a
             href="#"
             className="px-8 border-solid border-2 rounded-md p-2 mx-2 hover:bg-slate-200 hover:text-sky-700 duration-500"

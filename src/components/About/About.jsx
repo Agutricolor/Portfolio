@@ -25,7 +25,7 @@ export const About = () => {
               borderRadius: "50px",
               padding: "50px",
               opacity: 1.2,
-              transition: { ease: "easeInOut", duration: 0.5 },
+              transition: { ease: "easeInOut", duration: 1, type: "spring" },
             }}
             style={{
               borderRadius: "10px",
@@ -64,8 +64,8 @@ export const About = () => {
               más usadas, en poco tiempo, y con buena práctica.
             </p>
             <p>
-              Entonces decidí comenzar HENRY, y acá estoy, ya hecho un Full
-              Stack Developer, buscando a quien me dé la tan ansiada
+              Decidí comenzar HENRY, y acá estoy, ya hecho un Full Stack
+              Developer, buscando a quien me dé la tan ansiada
             </p>
             <p>
               oportunidad de comenzar mi carrera profesional, en este mundo, del
