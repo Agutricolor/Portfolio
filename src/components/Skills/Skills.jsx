@@ -14,6 +14,7 @@ export const Skills = () => {
       <div className="flex justify-evenly w-full font-semibold">
         <AnimationOnScroll
           animateIn="animate__fadeInLeft"
+          animateOnce={true}
           className="flex flex-col items-center"
         >
           <h1 className="text-4xl text-sky-600">Tecnologías</h1>
@@ -150,7 +151,11 @@ export const Skills = () => {
             />
           </div>
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__fadeInRight" className="">
+        <AnimationOnScroll
+          animateIn="animate__fadeInRight"
+          animateOnce={true}
+          className=""
+        >
           <h1 className="text-4xl text-sky-600">Habilidades blandas</h1>
           <motion.ul
             className="flex flex-col justify-center items-center text-xl"
