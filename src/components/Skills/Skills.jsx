@@ -3,13 +3,8 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css";
 import "./Skills.css";
 import { motion } from "framer-motion";
-import { useState } from "react";
 
 export const Skills = () => {
-  const [isAnimated, setIsAnimated] = useState(true);
-  const handleAnimation = () => {
-    setIsAnimated(!isAnimated);
-  };
   return (
     <div
       name="Skills"
@@ -25,276 +20,133 @@ export const Skills = () => {
           <div className="icons flex flex-wrap justify-center py-5">
             <motion.img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-              onClick={handleAnimation}
-              animate={
-                isAnimated
-                  ? {
-                      opacity: [0.7, 1, 0.7],
-                      scale: [null, 1.3, 1.1],
-                    }
-                  : {}
-              }
-              transition={
-                isAnimated
-                  ? {
-                      duration: 1,
-                      ease: "easeInOut",
-                      repeat: Infinity,
-                    }
-                  : {}
-              }
+              whileHover={{
+                scale: 1.2,
+                rotate: 15,
+              }}
+              transition={{
+                duration: 0.5,
+              }}
             />
             <motion.img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-              onClick={handleAnimation}
-              animate={
-                isAnimated
-                  ? {
-                      opacity: [0.7, 1, 0.7],
-                      scale: [null, 1.3, 1.1],
-                    }
-                  : {}
-              }
-              transition={
-                isAnimated
-                  ? {
-                      duration: 1,
-                      ease: "easeInOut",
-                      repeat: Infinity,
-                    }
-                  : {}
-              }
+              whileHover={{
+                scale: 1.2,
+                rotate: 15,
+              }}
+              transition={{
+                duration: 0.5,
+              }}
             />
             <motion.img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-              onClick={handleAnimation}
-              animate={
-                isAnimated
-                  ? {
-                      opacity: [0.7, 1, 0.7],
-                      scale: [null, 1.3, 1.1],
-                    }
-                  : {}
-              }
-              transition={
-                isAnimated
-                  ? {
-                      duration: 1,
-                      ease: "easeInOut",
-                      repeat: Infinity,
-                    }
-                  : {}
-              }
+              whileHover={{
+                scale: 1.2,
+                rotate: 15,
+              }}
+              transition={{
+                duration: 0.5,
+              }}
             />
             <motion.img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
-              onClick={handleAnimation}
-              animate={
-                isAnimated
-                  ? {
-                      opacity: [0.7, 1, 0.7],
-                      scale: [null, 1.3, 1.1],
-                    }
-                  : {}
-              }
-              transition={
-                isAnimated
-                  ? {
-                      duration: 1,
-                      ease: "easeInOut",
-                      repeat: Infinity,
-                    }
-                  : {}
-              }
+              whileHover={{
+                scale: 1.2,
+                rotate: 15,
+              }}
+              transition={{
+                duration: 0.5,
+              }}
             />
             <motion.img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
-              onClick={handleAnimation}
-              animate={
-                isAnimated
-                  ? {
-                      opacity: [0.7, 1, 0.7],
-                      scale: [null, 1.3, 1.1],
-                    }
-                  : {}
-              }
-              transition={
-                isAnimated
-                  ? {
-                      duration: 1,
-                      ease: "easeInOut",
-                      repeat: Infinity,
-                    }
-                  : {}
-              }
+              whileHover={{
+                scale: 1.2,
+                rotate: 15,
+              }}
+              transition={{
+                duration: 0.5,
+              }}
             />
             <motion.img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain-wordmark.svg"
-              onClick={handleAnimation}
-              animate={
-                isAnimated
-                  ? {
-                      opacity: [0.7, 1, 0.7],
-                      scale: [null, 1.3, 1.1],
-                    }
-                  : {}
-              }
-              transition={
-                isAnimated
-                  ? {
-                      duration: 1,
-                      ease: "easeInOut",
-                      repeat: Infinity,
-                    }
-                  : {}
-              }
+              whileHover={{
+                scale: 1.2,
+                rotate: 15,
+              }}
+              transition={{
+                duration: 0.5,
+              }}
             />
             <motion.img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-              onClick={handleAnimation}
-              animate={
-                isAnimated
-                  ? {
-                      opacity: [0.7, 1, 0.7],
-                      scale: [null, 1.3, 1.1],
-                    }
-                  : {}
-              }
-              transition={
-                isAnimated
-                  ? {
-                      duration: 1,
-                      ease: "easeInOut",
-                      repeat: Infinity,
-                    }
-                  : {}
-              }
+              whileHover={{
+                scale: 1.2,
+                rotate: 15,
+              }}
+              transition={{
+                duration: 0.5,
+              }}
             />
             <motion.img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg"
-              onClick={handleAnimation}
-              animate={
-                isAnimated
-                  ? {
-                      opacity: [0.7, 1, 0.7],
-                      scale: [null, 1.3, 1.1],
-                    }
-                  : {}
-              }
-              transition={
-                isAnimated
-                  ? {
-                      duration: 1,
-                      ease: "easeInOut",
-                      repeat: Infinity,
-                    }
-                  : {}
-              }
+              whileHover={{
+                scale: 1.2,
+                rotate: 15,
+              }}
+              transition={{
+                duration: 0.5,
+              }}
             />
             <motion.img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg"
-              onClick={handleAnimation}
-              animate={
-                isAnimated
-                  ? {
-                      opacity: [0.7, 1, 0.7],
-                      scale: [null, 1.3, 1.1],
-                    }
-                  : {}
-              }
-              transition={
-                isAnimated
-                  ? {
-                      duration: 1,
-                      ease: "easeInOut",
-                      repeat: Infinity,
-                    }
-                  : {}
-              }
+              whileHover={{
+                scale: 1.2,
+                rotate: 15,
+              }}
+              transition={{
+                duration: 0.5,
+              }}
             />
             <motion.img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg"
-              onClick={handleAnimation}
-              animate={
-                isAnimated
-                  ? {
-                      opacity: [0.7, 1, 0.7],
-                      scale: [null, 1.3, 1.1],
-                    }
-                  : {}
-              }
-              transition={
-                isAnimated
-                  ? {
-                      duration: 1,
-                      ease: "easeInOut",
-                      repeat: Infinity,
-                    }
-                  : {}
-              }
+              whileHover={{
+                scale: 1.2,
+                rotate: 15,
+              }}
+              transition={{
+                duration: 0.5,
+              }}
             />
             <motion.img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg"
-              onClick={handleAnimation}
-              animate={
-                isAnimated
-                  ? {
-                      opacity: [0.7, 1, 0.7],
-                      scale: [null, 1.3, 1.1],
-                    }
-                  : {}
-              }
-              transition={
-                isAnimated
-                  ? {
-                      duration: 1,
-                      ease: "easeInOut",
-                      repeat: Infinity,
-                    }
-                  : {}
-              }
+              whileHover={{
+                scale: 1.2,
+                rotate: 15,
+              }}
+              transition={{
+                duration: 0.5,
+              }}
             />
             <motion.img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-              onClick={handleAnimation}
-              animate={
-                isAnimated
-                  ? {
-                      opacity: [0.7, 1, 0.7],
-                      scale: [null, 1.3, 1.1],
-                    }
-                  : {}
-              }
-              transition={
-                isAnimated
-                  ? {
-                      duration: 1,
-                      ease: "easeInOut",
-                      repeat: Infinity,
-                    }
-                  : {}
-              }
+              whileHover={{
+                scale: 1.2,
+                rotate: 15,
+              }}
+              transition={{
+                duration: 0.5,
+              }}
             />
             <motion.img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
-              onClick={handleAnimation}
-              animate={
-                isAnimated
-                  ? {
-                      opacity: [0.7, 1, 0.7],
-                      scale: [null, 1.3, 1.1],
-                    }
-                  : {}
-              }
-              transition={
-                isAnimated
-                  ? {
-                      duration: 1,
-                      ease: "easeInOut",
-                      repeat: Infinity,
-                    }
-                  : {}
-              }
+              whileHover={{
+                scale: 1.2,
+                rotate: 15,
+              }}
+              transition={{
+                duration: 0.5,
+              }}
             />
           </div>
         </AnimationOnScroll>
@@ -302,23 +154,12 @@ export const Skills = () => {
           <h1 className="text-4xl text-sky-600">Habilidades blandas</h1>
           <motion.ul
             className="flex flex-col justify-center items-center text-xl"
-            onClick={handleAnimation}
-            animate={
-              isAnimated
-                ? {
-                    scale: [null, 1.1, 1],
-                    x: [0, 100, -100, 0],
-                  }
-                : {}
-            }
-            transition={
-              isAnimated
-                ? {
-                    duration: 2,
-                    repeat: Infinity,
-                  }
-                : {}
-            }
+            whileHover={{
+              scale: 1.2,
+            }}
+            transition={{
+              duration: 0.3,
+            }}
           >
             <li>Responsable</li>
             <li>Proactivo</li>
