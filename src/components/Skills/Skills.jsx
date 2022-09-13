@@ -18,7 +18,7 @@ export const Skills = () => {
           className="flex flex-col items-center"
         >
           <h1 className="text-4xl text-sky-600">Tecnologías</h1>
-          <div className="icons flex flex-wrap justify-center py-5">
+          <div className="icons grid grid-cols-3">
             <motion.img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
               whileHover={{

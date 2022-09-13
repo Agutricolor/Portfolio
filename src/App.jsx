@@ -8,7 +8,6 @@ import { Projects } from "./components/Projects/Projects";
 import { Skills } from "./components/Skills/Skills";
 
 function App() {
-  const assdf = () => {};
   return (
     <div className="App bg-slate-900">
       <Navbar />
