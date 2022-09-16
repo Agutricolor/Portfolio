@@ -6,8 +6,10 @@ import { Home } from "./components/Home/Home";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Projects } from "./components/Projects/Projects";
 import { Skills } from "./components/Skills/Skills";
+import { useMediaQuery } from "react-responsive";
 
 function App() {
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1280px)" });
   return (
     <div className="App bg-slate-900">
       <Navbar />
@@ -15,7 +17,7 @@ function App() {
       <About />
       <Skills />
       <Projects />
-      <Footer />
+      {!isTabletOrMobile && <Footer />}
     </div>
   );
 }

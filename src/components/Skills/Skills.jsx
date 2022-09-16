@@ -3,19 +3,25 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css";
 import "./Skills.css";
 import { motion } from "framer-motion";
+import { useMediaQuery } from "react-responsive";
 
 export const Skills = () => {
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1280px)" });
   return (
     <div
       name="Skills"
       id="Skills"
-      className="h-screen flex justify-center items-center text-white"
+      className="xl:h-screen flex justify-center items-center text-white"
     >
-      <div className="flex justify-evenly w-full font-semibold">
+      <div className="flex justify-evenly w-full font-semibold xl:flex-row flex-col">
         <AnimationOnScroll
           animateIn="animate__fadeInLeft"
           animateOnce={true}
-          className="flex flex-col items-center"
+          className={
+            isTabletOrMobile
+              ? "flex flex-col items-center py-10"
+              : "flex flex-col items-center"
+          }
         >
           <h1 className="text-4xl text-sky-600">Tecnologías</h1>
           <div className="icons grid grid-cols-3">
@@ -154,7 +160,10 @@ export const Skills = () => {
         <AnimationOnScroll
           animateIn="animate__fadeInRight"
           animateOnce={true}
-          className=""
+          className={
+            isTabletOrMobile &&
+            "flex flex-col justify-center items-center py-10"
+          }
         >
           <h1 className="text-4xl text-sky-600">Habilidades blandas</h1>
           <motion.ul

@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Card,
   CardActions,
@@ -5,7 +6,7 @@ import {
   CardMedia,
   Typography,
 } from "@mui/material";
-import React from "react";
+import { useMediaQuery } from "react-responsive";
 
 export const ProjectCard = ({
   image,
@@ -16,13 +17,18 @@ export const ProjectCard = ({
   title,
   description,
 }) => {
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1280px)" });
   return (
     <Card
-      sx={{
-        maxWidth: 500,
-        margin: 2,
-        borderRadius: 5,
-      }}
+      sx={
+        isTabletOrMobile
+          ? {
+              maxWidth: 300,
+              borderRadius: 5,
+              marginTop: 2,
+            }
+          : { maxWidth: 500, margin: 2, borderRadius: 5 }
+      }
     >
       <CardMedia component="img" height="140" image={image} />
       <CardContent>

@@ -4,17 +4,26 @@ import "animate.css";
 import { ProjectCard } from "./ProjectCard/ProjectCard";
 import piDogs from "../../assets/pi dogs.png";
 import wallet from "../../assets/wallet..png";
+import { useMediaQuery } from "react-responsive";
 
 export const Projects = () => {
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1280px)" });
   return (
-    <div id="Projects" className="h-screen flex justify-center items-center">
+    <div id="Projects" className="xl:h-screen flex justify-center items-center">
       <AnimationOnScroll
         animateIn="animate__zoomIn"
+        animateOnce={isTabletOrMobile ? true : false}
         duration={1}
         className="flex justify-center items-center flex-col"
       >
         <h1 className="font-bold text-sky-600 text-4xl p-5">Proyectos</h1>
-        <div className="flex flex-wrap">
+        <div
+          className={
+            isTabletOrMobile
+              ? "flex flex-col justify-center items-center"
+              : "flex flex-wrap"
+          }
+        >
           <ProjectCard
             image={piDogs}
             url="https://pi-dogs-mauve.vercel.app/"

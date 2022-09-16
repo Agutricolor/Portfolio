@@ -1,11 +1,15 @@
 import React from "react";
-import EmojiEmotionsIcon from "@mui/icons-material/EmojiEmotions";
 import me from "../../images/me.jpg";
+import MediaQuery from "react-responsive";
 
 export const Home = () => {
   return (
-    <div id="Home" name="Home" className="h-screen my-10 flex justify-center">
-      <div className="pl-16 flex flex-row items-center">
+    <div
+      id="Home"
+      name="Home"
+      className="xl:h-screen mt-24 xl:mt-0 flex justify-center items-center"
+    >
+      <div className="px-10 flex xl:flex-row xl:items-center flex-col">
         <div className="flex justify-center h-max flex-col text-white text-xl">
           <h1 className="text-4xl py-2">Hola!</h1>
           <h1 className="text-5xl py-4">
@@ -32,16 +36,18 @@ export const Home = () => {
           </p>
           <p>
             con el cual lucho todos los días para desarrollarlo siempre un poco
-            más. <EmojiEmotionsIcon />
+            más.
           </p>
         </div>
         <div className="pl-14 pr-3">
-          <img
-            src={me}
-            alt="Mi foto"
-            width={400}
-            className="bg-origin-border rounded-3xl"
-          />
+          <MediaQuery minWidth={1281}>
+            <img
+              src={me}
+              alt="Mi foto"
+              width={400}
+              className="bg-origin-border rounded-3xl xl:opacity-100"
+            />
+          </MediaQuery>
         </div>
       </div>
     </div>
