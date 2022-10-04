@@ -35,10 +35,10 @@ export const ProjectCard = ({
         <h1 className="text-3xl font-bold py-3 text-sky-600">{title}</h1>
         <p className="font-semibold">{description}</p>
       </CardContent>
-      <CardActions>
+      <CardActions className="flex flex-wrap justify-evenly">
         <a
           href={url}
-          className="px-8 border-solid border-2 rounded-md p-2 mx-2 hover:bg-sky-600 hover:text-white duration-500 font-bold text-sky-600"
+          className="px-5 py-2 m-2 border-solid border-2 rounded-md  hover:bg-sky-600 hover:text-white duration-500 font-bold text-sky-600"
           rel="noreferrer"
           target="_blank"
         >
@@ -47,7 +47,7 @@ export const ProjectCard = ({
         {repoUrl && (
           <a
             href={repoUrl}
-            className="px-8 border-solid border-2 rounded-md p-2 mx-2 hover:bg-sky-600 hover:text-white duration-500 font-bold text-sky-600"
+            className="px-5 py-2 m-2 border-solid border-2 rounded-md  hover:bg-sky-600 hover:text-white duration-500 font-bold text-sky-600"
             rel="noreferrer"
             target="_blank"
           >
@@ -57,7 +57,7 @@ export const ProjectCard = ({
         {repoFront && (
           <a
             href={repoFront}
-            className="px-8 border-solid border-2 rounded-md p-2 mx-2 hover:bg-sky-600 hover:text-white duration-500 font-bold text-sky-600"
+            className="px-5 py-2 m-2 border-solid border-2 rounded-md  hover:bg-sky-600 hover:text-white duration-500 font-bold text-sky-600"
             rel="noreferrer"
             target="_blank"
           >
@@ -67,7 +67,7 @@ export const ProjectCard = ({
         {repoBack && (
           <a
             href={repoBack}
-            className="px-8 border-solid border-2 rounded-md p-2 mx-2 hover:bg-sky-600 hover:text-white duration-500 font-bold text-sky-600"
+            className="px-5 py-2 m-2 border-solid border-2 rounded-md  hover:bg-sky-600 hover:text-white duration-500 font-bold text-sky-600"
             rel="noreferrer"
             target="_blank"
           >
