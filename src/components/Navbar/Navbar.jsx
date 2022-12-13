@@ -7,6 +7,7 @@ import MediaQuery from "react-responsive";
 import DensityMediumIcon from "@mui/icons-material/DensityMedium";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import CV from "../../assets/Full Stack Web Developer CV.pdf";
 
 const style = {
   position: "absolute",
@@ -91,7 +92,8 @@ export const Navbar = () => {
               Contacto
             </a>
             <a
-              href="https://drive.google.com/file/d/1CtouvQqaM2uTXHD85SXpuoeQmocosJ0g/view?usp=sharing"
+              href={CV}
+              download="Agustin Vazquez - Full Stack Web Developer"
               rel="noreferrer"
               target="_blank"
               className="px-8 border-solid border-2 rounded-md p-2 mx-2 hover:bg-slate-200 hover:text-sky-700 duration-500"
