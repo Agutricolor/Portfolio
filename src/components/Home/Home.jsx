@@ -1,5 +1,6 @@
 import React from "react";
 import me from "../../images/me.jpg";
+import Perfil from "../../images/Perfil.png";
 import MediaQuery from "react-responsive";
 
 export const Home = () => {
@@ -42,7 +43,7 @@ export const Home = () => {
         <div className="pl-14 pr-3">
           <MediaQuery minWidth={1281}>
             <img
-              src={me}
+              src={Perfil}
               alt="Mi foto"
               width={400}
               className="bg-origin-border rounded-3xl xl:opacity-100"
