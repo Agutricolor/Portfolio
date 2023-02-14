@@ -7,7 +7,7 @@ import MediaQuery from "react-responsive";
 import DensityMediumIcon from "@mui/icons-material/DensityMedium";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import CV from "../../assets/Full Stack Web Developer CV.pdf";
+import CV from "../../assets/CV.pdf";
 
 const style = {
   position: "absolute",
